@@ -227,7 +227,7 @@ export default function Landing({ providers }: LandingProps) {
                           viewBox='0 0 732 630'
                           fill='none'
                           xmlns='http://www.w3.org/2000/svg'>
-                          <g clip-path='url(#clip0_2_53)'>
+                          <g clipPath='url(#clip0_2_53)'>
                             <path
                               d='M304.106 546.98L312.09 520.976C302.483 510.402 290.44 502.333 277.006 497.47C290.131 519.214 277.413 547.578 282.713 572.416C284.425 580.15 287.856 587.4 292.751 593.628C297.646 599.856 303.88 604.903 310.99 608.394L323.107 623.408C329.459 612.309 333.33 599.966 334.453 587.228C335.575 574.489 333.923 561.659 329.609 549.621C327.123 542.892 323.798 536.502 319.715 530.603C312.515 539.068 304.106 546.98 304.106 546.98Z'
                               fill={
@@ -549,7 +549,7 @@ export default function Landing({ providers }: LandingProps) {
                                 alert("Please sign up with your MIT email.")
                               } else {
                                 var Airtable = require('airtable');
-                                var base = new Airtable({apiKey: 'keysirngLYhdQL89S'}).base('appZo6FT8OkGcBdli');
+                                var base = new Airtable({apiKey: process.env.AIRTABLE_API_KEY}).base('appZo6FT8OkGcBdli');
                                 
                                 base('Contact Info').create([
                                   {
