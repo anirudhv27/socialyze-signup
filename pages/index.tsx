@@ -559,12 +559,12 @@ export default function Landing({ providers }: LandingProps) {
                                       "Graduation Year": year
                                     }
                                   }
-                                ], function(err, records) {
+                                ], function(err: any, records: any[]) {
                                   if (err) {
                                     console.error(err);
                                     return;
                                   }
-                                  records.forEach(function (record) {
+                                  records.forEach(function (record: { getId: () => any; }) {
                                     console.log(record.getId());
                                   });
                                   setSubmitted(true)
