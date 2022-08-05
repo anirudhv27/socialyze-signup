@@ -7,7 +7,7 @@ import {
   Heading,
   VisuallyHidden,
   Container,
-  Text
+  Text,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
@@ -29,7 +29,7 @@ const Logo = (props: any) => {
     //     fill="#2F855A"
     //   />
     // </svg>
-    <Heading size='lg'>Socialyze</Heading>
+    <Heading size="lg">Socialyze</Heading>
   );
 };
 
@@ -58,7 +58,8 @@ const SocialButton = ({
       _hover={{
         bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
       }}
-      target={"_blank"}>
+      target={"_blank"}
+    >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
     </chakra.button>
@@ -69,27 +70,30 @@ export default function SmallCentered() {
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.800")}
-      color={useColorModeValue("gray.700", "gray.200")}>
-      <Container
+      color={useColorModeValue("gray.700", "gray.200")}
+    >
+      {/* <Container
         as={Stack}
         maxW={"6xl"}
         py={4}
         spacing={4}
         justify={"center"}
-        align={"center"}>
+        align={"center"}
+      >
         <Logo />
         <Stack direction={"row"} spacing={6}>
           <Link href={"#"}>Join</Link>
           <Link href={"#"}>Terms</Link>
           <Link href={"#"}>Privacy</Link>
-          {/* <Link href={"#"}>Contact</Link> */}
+          <Link href={"#"}>Contact</Link>
         </Stack>
-      </Container>
+      </Container> */}
 
       <Box
         borderTopWidth={1}
         borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.700")}>
+        borderColor={useColorModeValue("gray.200", "gray.700")}
+      >
         <Container
           as={Stack}
           maxW={"6xl"}
@@ -97,7 +101,8 @@ export default function SmallCentered() {
           direction={{ base: "column", md: "row" }}
           spacing={4}
           justify={{ base: "center", md: "space-between" }}
-          align={{ base: "center", md: "center" }}>
+          align={{ base: "center", md: "center" }}
+        >
           <Text>© 2022 Socialyze. All rights reserved</Text>
           <Stack direction={"row"} spacing={6}>
             {/* <SocialButton label={"Twitter"} href={"#"}>
@@ -105,12 +110,14 @@ export default function SmallCentered() {
             </SocialButton> */}
             <SocialButton
               label={"Facebook"}
-              href={"https://www.facebook.com/joinsocialyze"}>
+              href={"https://www.facebook.com/joinsocialyze"}
+            >
               <FaFacebook />
             </SocialButton>
             <SocialButton
               label={"Instagram"}
-              href={"https://instagram.com/joinsocialyze"}>
+              href={"https://instagram.com/joinsocialyze"}
+            >
               <FaInstagram />
             </SocialButton>
           </Stack>

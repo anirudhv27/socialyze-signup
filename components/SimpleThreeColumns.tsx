@@ -28,7 +28,8 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
         color={"white"}
         rounded={"full"}
         bg={"gray.100"}
-        mb={1}>
+        mb={1}
+      >
         {icon}
       </Flex>
       <Text fontWeight={600}>{title}</Text>
@@ -52,7 +53,7 @@ export default function SimpleThreeColumns() {
           icon={<Icon as={FcComments} w={10} h={10} />}
           title={"Message"}
           text={
-            "Send direct messages to your matches to build a closer connection with your peers."
+            "Send direct messages and meet your matches in-person to build a closer connection with your peers."
           }
         />
         <Feature

@@ -122,11 +122,13 @@ function TestmonialCard(props: TestimonialCardProps) {
         top: 0,
         left: 0,
         backgroundImage: backgrounds[index % 4],
-      }}>
+      }}
+    >
       <Flex
         direction={"column"}
         textAlign={"left"}
-        justifyContent={"space-between"}>
+        justifyContent={"space-between"}
+      >
         <chakra.p fontWeight={"medium"} fontSize={"15px"} pb={4}>
           {content}
         </chakra.p>
@@ -157,7 +159,8 @@ export default function GridBlurredBackdrop() {
       justifyContent={"center"}
       direction={"column"}
       width={"full"}
-      mb={40}>
+      mb={40}
+    >
       <Box width={{ base: "full", sm: "lg", lg: "3xl" }} margin={"auto"}>
         {/* <chakra.h3
           fontWeight={"bold"}
@@ -171,7 +174,8 @@ export default function GridBlurredBackdrop() {
           py={5}
           fontSize={40}
           fontWeight={"bold"}
-          color={useColorModeValue("gray.700", "gray.50")}>
+          color={useColorModeValue("gray.700", "gray.50")}
+        >
           See what your peers say about Socialyze.
         </chakra.h1>
         {/* <chakra.h2
@@ -192,7 +196,8 @@ export default function GridBlurredBackdrop() {
         columns={{ base: 1, xl: 2 }}
         spacing={"20"}
         mt={16}
-        mx={"auto"}>
+        mx={"auto"}
+      >
         {testimonials.map((cardInfo, index) => (
           <TestmonialCard
             key={`testimonial-${index}`}
