@@ -55,7 +55,7 @@ const avatars = [
   },
   {
     name: "Dev Chheda",
-    url: "https://media-exp1.licdn.com/dms/image/C4D03AQHBHwr63g0FvQ/profile-displayphoto-shrink_400_400/0/1638891274305?e=1665014400&v=beta&t=5vtzY750rxbqlNL__ZvxU2X35a2LrGkam746v1Cd4Xo",
+    url: "https://media-exp1.licdn.com/dms/image/C5603AQHSYJk65St9pQ/profile-displayphoto-shrink_400_400/0/1658354189085?e=1665014400&v=beta&t=9HMilCyLBShN5hJ8-lwkJL74KjaP_VKLcCsTuGtPL4U",
   },
 ];
 
